@@ -5,6 +5,7 @@
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="5dp"
     tools:context=".CamaraActividad">
 
     <ImageView
@@ -33,15 +34,16 @@
             android:id="@+id/seleccionarImagen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            sc
+            android:layout_weight="0.5"
+            android:layout_margin="5dp"
             android:text="Seleccionar Imagen" />
 
         <Button
             android:id="@+id/camaraActividadCamara"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="0.5"
+            android:layout_margin="5dp"
             android:text="Camara" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

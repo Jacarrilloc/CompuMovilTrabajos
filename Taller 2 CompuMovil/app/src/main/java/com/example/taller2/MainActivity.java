@@ -9,7 +9,7 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton camara, contactos, ubicacion;
+    ImageButton camara,contactos, ubicacion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,13 +23,24 @@ public class MainActivity extends AppCompatActivity {
         camara.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                clickCamara();
+                clickCamara(v);
             }
         });
+
+        contactos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) { clicContactos(v); }
+        });
+
     }
 
-    private void clickCamara(){
-        Intent actividadCamara = new Intent(getApplicationContext(),CamaraActividad.class);
+    private void clickCamara(View v){
+        Intent actividadCamara = new Intent(v.getContext(),CamaraActividad.class);
         startActivity(actividadCamara);
+    }
+
+    private void clicContactos(View v){
+        Intent actividadContacto = new Intent(v.getContext(),ContactosActividad.class);
+        startActivity(actividadContacto);
     }
 }
