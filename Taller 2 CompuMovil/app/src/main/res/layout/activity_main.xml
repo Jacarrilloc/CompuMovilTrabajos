@@ -14,6 +14,7 @@
         android:layout_height="80dp"
         android:layout_marginTop="120dp"
         android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/camara" />
@@ -24,6 +25,7 @@
         android:layout_height="80dp"
         android:layout_marginTop="100dp"
         android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botonCamara"
         app:srcCompat="@drawable/contacto" />
@@ -34,6 +36,7 @@
         android:layout_height="80dp"
         android:layout_marginTop="100dp"
         android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/botonContacto"
         app:srcCompat="@drawable/ubicacion" />
